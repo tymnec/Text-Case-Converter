@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Text Case Converter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <h1
+    class="m-10 flex justify-center font-light text-5xl bg-blue-400 p-5 rounded-3xl text-white shadow-2xl shadow-blue-300 select-none">
+    Text Case Converter</h1>
+  <br>
+  <br>
+  <div class="shadow-2xl shadow-red-300 hover:shadow-blue-300 mx-10 rounded-2xl duration-700 p-10">
+    <textarea
+    class="flex justify-center hover:scale-150 transition duration-1000 ease-in-out m-auto p-5 rounded-3xl drop-shadow-lg w-1/2"
+    id="text-input">
+  </textarea>
+  <br>
+  <br>
+  <div class="flex flex-row space-x-5 mx-auto justify-center">
+   <button onclick="convertToUppercase()" class="shadow-lg hover:scale-125 transition duration-1000 ease-in-out bg-slate-800 p-4 text-white rounded-full hover:font-bold">Convert to Uppercase</button>
+   <button onclick="convertToLowercase()" class="shadow-lg hover:scale-125 transition duration-1000 ease-in-out bg-slate-800 p-4 text-white rounded-full hover:font-bold">Convert to Lowercase</button>
+   <button onclick="convertToTitlecase()" class="shadow-lg hover:scale-125 transition duration-1000 ease-in-out bg-slate-800 p-4 text-white rounded-full hover:font-bold">Convert to Titlecase</button>
+  </div>
+    <br>
+  <br>
+  <textarea
+    class="flex justify-center transition duration-1000 ease-in-out m-auto p-5 rounded-3xl drop-shadow-lg w-1/2"
+    id="text-output"></textarea>
+  <br>
+  </div>
+  
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
